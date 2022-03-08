@@ -15,3 +15,6 @@ FROM roles;
 #use method COUNT() to count the amount of rows
 SELECT COUNT(*)
 FROM reviews;
+
+SELECT COUNT(DISTINCT country)
+FROM films;
