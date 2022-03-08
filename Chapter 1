@@ -4,3 +4,6 @@ AS result;
 SELECT name
 FROM people;
 
+#to select all tables use *
+SELECT *
+FROM films;
