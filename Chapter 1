@@ -7,3 +7,7 @@ FROM people;
 #to select all tables use *
 SELECT *
 FROM films;
+
+#use keyword DISTINCT to find distinct elements in a feature 
+SELECT DISTINCT role
+FROM roles;
