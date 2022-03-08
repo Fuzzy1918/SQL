@@ -11,3 +11,7 @@ FROM films;
 #use keyword DISTINCT to find distinct elements in a feature 
 SELECT DISTINCT role
 FROM roles;
+
+#use method COUNT() to count the amount of rows
+SELECT COUNT(*)
+FROM reviews;
