@@ -1,2 +1,6 @@
 SELECT 'SQL'
 AS result;
+
+SELECT name
+FROM people;
+
