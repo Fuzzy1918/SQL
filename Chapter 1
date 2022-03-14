@@ -18,3 +18,8 @@ FROM reviews;
 
 SELECT COUNT(DISTINCT country)
 FROM films;
+
+#selecting the title and release_year collumn from the films table 
+SELECT title, release_year
+FROM films
+WHERE release_year > 2000
