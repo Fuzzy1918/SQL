@@ -47,3 +47,7 @@ AND (language = 'Spanish' OR language = 'French');
 SELECT count(*)
 FROM films 
 WHERE language is NULL
+
+SELECT name 
+FROM people 
+WHERE name NOT LIKE 'A%';
