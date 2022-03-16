@@ -5,3 +5,6 @@ FROM films;
 SELECT MAX(gross)
 FROM films
 WHERE (release_year BETWEEN 2000 and 2012);
+
+SELECT (MAX(release_year) - MIN(release_year)) / 10.0 AS number_of_decades
+FROM films;
