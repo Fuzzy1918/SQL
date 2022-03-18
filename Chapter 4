@@ -15,3 +15,8 @@ SELECT imdb_score, count(*)
 FROM reviews
 GROUP BY imdb_score 
 ORDER BY imdb_score DESC
+
+SELECT country,release_year, min(gross)
+FROM films
+GROUP BY country, release_year
+ORDER BY country, release_year
