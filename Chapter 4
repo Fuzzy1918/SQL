@@ -10,3 +10,8 @@ ORDER BY title;
 SELECT name, birthdate
 FROM people
 ORDER BY name, birthdate;
+
+SELECT imdb_score, count(*)
+FROM reviews
+GROUP BY imdb_score 
+ORDER BY imdb_score DESC
