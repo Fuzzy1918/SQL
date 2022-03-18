@@ -1,1 +1,3 @@
-
+SELECT birthdate, name
+from people 
+ORDER BY birthdate
