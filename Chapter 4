@@ -6,3 +6,7 @@ SELECT title, gross
 FROM films 
 WHERE title LIKE 'M%'
 ORDER BY title;
+
+SELECT name, birthdate
+FROM people
+ORDER BY name, birthdate;
