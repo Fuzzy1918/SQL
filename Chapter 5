@@ -11,3 +11,10 @@ FROM countries AS c
     -- Match on code
     ON c.code = e.code;
     
+SELECT c.code, c.name, c.region, p.fertility_rate, e.unemployment_rate, e.year
+FROM countries AS c 
+INNER JOIN populations as p
+ON c.code = p.country_code
+INNER JOIN economies as e 
+ON p.country_code = e.code
+WHERE e.year = 2010 or e.year = 2015
