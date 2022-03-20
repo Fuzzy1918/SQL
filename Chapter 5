@@ -18,3 +18,8 @@ ON c.code = p.country_code
 INNER JOIN economies as e 
 ON p.country_code = e.code
 WHERE e.year = 2010 or e.year = 2015
+
+SELECT c.name as country, continent, l.name as language, official
+FROM countries as c
+INNER JOIN languages as l
+USING (code)
