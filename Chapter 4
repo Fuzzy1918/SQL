@@ -34,3 +34,14 @@ GROUP BY country
 HAVING count(title) > 10
 ORDER BY country
 LIMIT 5;
+
+-- Select fields
+SELECT name, continent, geosize_group, popsize_group
+-- From countries_plus (alias as c)
+FROM countries_plus as c
+  -- Join to pop_plus (alias as p)
+  JOIN pop_plus as p
+    -- Match on country code
+    ON c.code = p.country_code
+-- Order the table    
+ORDER by geosize_group;
