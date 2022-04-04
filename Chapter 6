@@ -62,3 +62,10 @@ FROM countries AS c1
     USING (code)
 -- Where region like Melanesia and Micronesia
 WHERE region LIKE 'M%esia';
+
+
+SELECT c.name as city, l.name as language
+FROM cities as c 
+INNER JOIN languages as l
+ON c.country_code = l.code
+WHERE c.name LIKE 'Hyder%'
