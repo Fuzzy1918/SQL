@@ -69,3 +69,11 @@ FROM cities as c
 INNER JOIN languages as l
 ON c.country_code = l.code
 WHERE c.name LIKE 'Hyder%'
+
+SELECT c.name as Country, region, p.life_expectancy as life_exp
+FROM countries as c
+LEFT JOIN populations as p 
+ON c.code = p.country_code
+WHERE p.year = 2010
+ORDER BY life_expectancy
+LIMIT 5;
