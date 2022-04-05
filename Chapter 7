@@ -1,0 +1,6 @@
+Select code, year, income_group,gross_savings
+FROM economies2010
+UNION
+Select code, year, income_group,gross_savings
+From economies2015
+Order by code, year;
