@@ -4,3 +4,10 @@ UNION
 Select code, year, income_group,gross_savings
 From economies2015
 Order by code, year;
+
+SELECT code, name
+FROM countries
+INTERSECT 
+SELECT country_code, name 
+FROM cities 
+ORDER BY code;
