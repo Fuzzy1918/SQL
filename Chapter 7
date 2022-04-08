@@ -11,3 +11,11 @@ INTERSECT
 SELECT country_code, name 
 FROM cities 
 ORDER BY code;
+
+
+SELECT name, country_code
+FROM cities
+EXCEPT 
+SELECT capital, code
+FROM countries
+ORDER BY name;
