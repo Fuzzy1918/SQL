@@ -29,3 +29,11 @@ SELECT countries.name AS country,
 FROM countries
 ORDER BY cities_num DESC, country
 LIMIT 9;
+
+SELECT local_name, subquery.lang_num
+  FROM countries,
+  	(SELECT code, COUNT(*) AS lang_num
+  	 FROM languages
+  	 GROUP BY code) AS subquery
+  WHERE countries.code = subquery.code
+ORDER BY lang_num DESC;
