@@ -61,3 +61,4 @@ SELECT league, date, home_goal, away_goal
 FROM match_list
 -- Filter by total goals
 WHERE total_goals >= 10;
+
